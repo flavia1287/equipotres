@@ -32,7 +32,7 @@ export default function Account(){
     async function initialValues(){
         if(!(user===null || user === undefined)){
             console.log(user);
-            axios.get(`http://localhost:3000/api/user/${user.email}`).then(function(response) {
+            axios.get(`/api/user/${user.email}`).then(function(response) {
                 console.log(response);
                 console.log(response.data);
                 // setId(response.data.idUser)
