@@ -102,12 +102,6 @@ const Sidebar = () => {
               <p>Modify a car</p>
             </Link>
           </li>
-          <li className="font-bold p-4  w-full ">
-            <button className="flex items-center gap-4 text-black bg-white w-full p-4 rounded-lg  ">
-              <SiGoogleanalytics size={25} />
-              <p>Analytics</p>
-            </button>
-          </li>
         </ul>
       </div>
 
