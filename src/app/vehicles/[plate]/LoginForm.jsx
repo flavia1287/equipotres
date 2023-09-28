@@ -74,15 +74,18 @@ export default function Login({idvehicle,setShowLoginModal}) {
 
   return (
     <div className="flex  flex-col  bg-white justify-around">
-      <button  className="absolute top-48 right-96 m-2 p-2 text-black rounded-full hover:bg-primary hover:text-white w-10" 
-      onClick={handleButton}
-    >
-      X
-    </button>
-      <div className="flex min-h-full flex-1 flex-col items-center px-6 py-12 lg:px-8">
-        <Link href="/">
-          <Infinit />
-        </Link>        
+           <div className="flex min-h-full flex-1 flex-col items-center px-6 py-12 lg:px-8">          
+            <div className="relative flex justify-center items-center w-full"> 
+              <Link href="/">
+                  <Infinit />
+              </Link>
+              <button 
+                  className="absolute right-4 text-black rounded-full hover:bg-primary hover:text-white w-6" 
+                  onClick={handleButton}
+              >
+                  X
+              </button>
+            </div>       
         <p className="text-lg sm:text-2xl worksans-regular mt-10 border-b-primary border-b-4 pb-2 ">
           Sign in to your account
         </p>

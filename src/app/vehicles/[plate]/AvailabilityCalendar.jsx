@@ -103,7 +103,7 @@ const AvailabilityCalendar = ({ idvehicle }) => {
  {showLoginModal && (
     <div class name="pop" style={{ position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '1000', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
  
-    <div className="modal" style={{ backgroundColor: 'white', width: '50%',height: '70%', padding: '2px', borderRadius: '8px' }}>
+ <div className="modal-pop" style={{ backgroundColor: 'white', width: '70%',height: '70%', padding: '2px', borderRadius: '8px' }}>
       <div className="modal-content">
         <LoginForm
           idvehicle={idvehicle}
