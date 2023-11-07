@@ -28,7 +28,6 @@ export const Navbar = () => {
   const userContext = useContext(UserContext);
   let user2 = userContext.getUser();
   
-  console.log("userID2: ");
 
   const openSidebar = () => {
     isSideMenuOpen(!sideMenu);
@@ -121,11 +120,7 @@ export const Navbar = () => {
         :
         (
           <li className="text-lg text-slate-300">
-            <button data-tooltip-target="tooltip-default" type="button">Favorites</button>
-            <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-400 rounded-lg shadow-sm opacity-0 tooltip">
-                For registered users
-                  <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
+            <button type="button">Favorites</button>
           </li>
         )}  
           
@@ -142,11 +137,8 @@ export const Navbar = () => {
           <>
             <li className="text-lg text-slate-300">
 
-              <button data-tooltip-target="tooltip-default" type="button">History</button>
-              <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-400 rounded-lg shadow-sm opacity-0 tooltip">
-                For registered users
-                  <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
+              <button type="button">History</button>
+
             </li>
           </>
         )}
